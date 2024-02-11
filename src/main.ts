@@ -12,9 +12,9 @@ async function bootstrap() {
   const SWAGGER_THEME: SwaggerThemeName = config.get('SWAGGER_THEME');
 
   const swaggerOptions = new DocumentBuilder()
-    .setTitle('CRM WIKI elections Web API')
-    .setDescription('CRM API "WIKI elections"')
-    .setVersion('2.0.0')
+    .setTitle('Swagger Themes Example API')
+    .setDescription('API "Swagger Themes"')
+    .setVersion('1.0.0')
     .addBearerAuth()
     .build();
   const swaggerDocument = SwaggerModule.createDocument(app, swaggerOptions);
