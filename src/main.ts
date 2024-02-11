@@ -18,7 +18,7 @@ async function bootstrap() {
     .addBearerAuth()
     .build();
   const swaggerDocument = SwaggerModule.createDocument(app, swaggerOptions);
-  const swaggerTheme = new SwaggerTheme('v3');
+  const swaggerTheme = new SwaggerTheme();
 
   SwaggerModule.setup('/api/docs', app, swaggerDocument, {
     explorer: true,
