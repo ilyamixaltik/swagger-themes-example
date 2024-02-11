@@ -20,6 +20,14 @@ export class UsersService {
     return `This action updates a #${id} user`;
   }
 
+  updateRole(id: number, updateUserDto: UpdateUserDto) {
+    return `This action updates a #${id} user`;
+  }
+
+  updateLogin(id: number, updateUserDto: UpdateUserDto) {
+    return `This action updates a #${id} user`;
+  }
+
   remove(id: number) {
     return `This action removes a #${id} user`;
   }
